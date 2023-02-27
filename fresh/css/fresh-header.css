@@ -1,0 +1,547 @@
+header {
+  /*position: relative;*/
+  position: absolute;
+  width: 100%;
+  /*top: 0;*/
+  z-index: 90;
+}
+header.on {
+  background-color: #fff;
+}
+header.on::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 150px;
+  background-color: transparent;
+}
+.h-box {
+  position: relative;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+header.on .h-box {
+  border-bottom-color: rgba(0, 0, 0, 0.3);
+}
+.mn-wrap {
+  position: absolute;
+  left: 9%;
+  top: 22px;
+}
+.lang {
+  background: url(../img/fresh/common/ico_lang_w.png) no-repeat 0 0;
+  padding-left: 30px;
+  line-height: 25px;
+}
+.lang > a {
+  color: #fff;
+  font-size: 18px;
+}
+header.on .lang {
+  background-image: url(../img/fresh/common/ico_lang.png);
+}
+header.on .lang > a {
+  color: #111;
+}
+.h-in {
+  width: 100%;
+  margin: 0 auto;
+}
+.h-in > h1 > a {
+  display: block;
+  height: 100%;
+}
+.h-in > nav {
+  float: left;
+  text-align: center;
+  width: calc(100% - 30px);
+}
+.h-in .navi > li {
+  display: inline-block;
+  margin: 0 20px;
+}
+.h-in .navi > li > a {
+  font-weight: bold;
+  display: block;
+  padding: 23px 0;
+  color: #fff;
+  /*background-color: yellow;*/
+}
+header.on .h-in .navi > li > a {
+  color: #111;
+}
+.navi .depth {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 90;
+  background-color: #f5f4f1;
+  opacity: 1;
+  height: 300px;
+  padding: 50px 0;
+}
+.navi .d-list {
+  position: relative;
+  text-align: left;
+}
+.navi .d-list .sub-depth {
+  /*background-color: lightcyan;*/
+  position: absolute;
+  top: 0;
+  left: 220px;
+  z-index: 75;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: 0.5s 0.3s;
+}
+.navi .depth-in {
+  width: 80%;
+  max-width: 1120px;
+  margin: 0 auto;
+  /*background-color: lightgreen;*/
+}
+.navi .d-list.on .sub-depth {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+/*.navi .d-list .sub-left {
+	background-color: lightcoral;
+}*/
+.navi .d-list .sub-left .sub-depth a {
+  width: auto;
+}
+.navi .d-list .sub-depth a:hover {
+  font-weight: 500;
+}
+.navi .d-list .sub-depth a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #003628;
+  transition: 0.3s;
+  transform: scale(0);
+}
+.navi .d-list .sub-depth a:hover::after {
+  transform: scale(1);
+}
+.navi .depth-in {
+  position: relative;
+}
+.navi .d-list .sub-right,
+.navi .depth-in > .sub-right {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 80;
+  background-color: lightsalmon;
+}
+.navi li.on .depth-in > .sub-right {
+  display: block;
+}
+.navi .d-list .sub-right.frame {
+  top: -35px;
+}
+.navi .d-list .sub-right.pillow {
+  top: -70px;
+}
+.navi .d-list .sub-right figcaption {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 30px 0 20px;
+}
+.navi .sub-right figcaption {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 30px 0 20px;
+  text-align: left;
+}
+.navi .d-list .sub-right > a {
+  font-size: 13px;
+  font-weight: 300;
+  border-bottom: 1px solid #003628;
+}
+.navi .d-list.on .sub-right {
+  display: block;
+}
+.navi > li.on .depth {
+  display: block;
+}
+.navi .d-list .sub-left a,
+.navi .sub-left .d-list > a {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2.2;
+  display: inline-block;
+  width: 200px;
+  position: relative;
+}
+.navi .sub-left .sub-depth a {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2.2;
+  display: inline-block;
+  position: relative;
+}
+.navi .d-list.on .sub-left > a,
+.navi .sub-left .d-list.on > a {
+  font-weight: 500;
+}
+.navi .d-list .sub-left > a::after,
+.navi .d-list > a::after {
+  content: "";
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: 0.5s 0.3s;
+  position: absolute;
+  top: 9px;
+  left: 90%;
+  display: inline-block;
+  width: 9px;
+  height: 16px;
+  background: url(../img/fresh/header/gnbArrow.png) no-repeat 0 0;
+}
+.navi .d-list.on .sub-left > a::after,
+.navi .d-list.on > a::after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.h-in > .right {
+  float: right;
+  margin-top: 23px;
+  /*background-color: yellow;*/
+}
+.h-in > .right li {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 0 10px;
+  position: relative;
+}
+.right > .pc > li::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 14px;
+  right: -4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.right > .pc > li:last-child::after {
+  display: none;
+}
+.right > .mo {
+  display: none;
+}
+.line-h .a-btn {
+  position: relative;
+  left: 10px;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/fresh/common/down.png) no-repeat 0 0 / contain;
+  transform: rotate(90deg);
+}
+.on > .a-btn {
+  background-image: url(../img/fresh/common/down.png);
+  transform: rotate(-90deg);
+}
+.on > .m-sub-list > li {
+  display: block;
+}
+.line-h > em > a {
+  color: #fff;
+  font-weight: 200;
+  width: 90%;
+  box-sizing: border-box;
+  padding: 16px 0 16px 25px;
+}
+.line-h > em > a > span::after {
+  display: none;
+}
+.line-h > em > .m {
+  background-color: transparent;
+  border: none;
+  padding-top: 20px;
+}
+@media (max-width: 1160px) {
+  .h-in > h1 {
+    width: 100px;
+    height: 60px;
+    float: left;
+    background: url(../img/fresh/common/logo.png) no-repeat 0 0 / 100%;
+    margin-right: 175px;
+  }
+  .h-shadow {
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 99;
+  }
+  .h-in > h1 {
+    margin-right: 0;
+  }
+  .right > .pc {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .h-in > .right {
+    margin-top: 9px;
+  }
+  .h-in > .right li {
+    padding: 0;
+    padding-left: 10px;
+  }
+  .right > .mo {
+    display: block;
+  }
+  .mo > .ham > button {
+    width: 40px;
+    height: 40px;
+    background: url(../img/fresh/header/new_menu.png) no-repeat 0 0 / 40px;
+  }
+  /*.mo > .cart > button {
+		background-image: url(../img/fresh/header/new_cart.png);
+		position: relative;
+	}*/
+  /*.mo > .cart span {
+		position: absolute;
+		display: block;
+		background-color: #003628;
+		color: #fff;
+		font-size: 12px;
+		font-weight: bold;
+		width: 22px;
+		height: 22px;
+		border-radius: 50%;
+		line-height: 23px;
+		top: 2px;
+		right: 1px;
+	}*/
+  /*.mo > .ham > button {
+		background-image: url(../img/fresh/header/new_menu.png);
+	}*/
+  .mo > .ham.on > button {
+    background-image: url(../img/fresh/header/new_munu_close.png);
+  }
+  .mo > .ham > button {
+    width: 45px;
+    height: 45px;
+    /*background: none;*/
+  }
+}
+
+/*  mobile */
+
+.m-navi {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 90;
+  top: 60px;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #f5f4f1;
+  position: relative;
+}
+.m-sub-list {
+  display: none;
+}
+.on > .m-sub-list {
+  display: block;
+}
+@media (max-width: 1160px) {
+  .m-navi.on {
+    display: block;
+    position: relative;
+    top: -1px;
+  }
+  .h-in {
+    background-color: #fff;
+  }
+}
+
+.m-in {
+  width: 100%;
+  height: 100%;
+}
+.m-navi .m-top {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.m-navi .m-top > a {
+  width: 50%;
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  color: #717171;
+}
+.m-top > .join::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  top: 12px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.m-top a > span::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url(../img/fresh/header/new_join.png) no-repeat 0 0 / 100%;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+.m-navi .order > span::before {
+  background-image: url(../img/fresh/header/new_order.png);
+}
+@media (max-width: 512px) {
+  .m-top a > span::before {
+    width: 22px;
+    height: 22px;
+  }
+}
+/*.m-sub-list > li::before {
+	content: '\00B7 ';
+	font-size: 30px;
+	margin-right: 8px;
+}*/
+.first > li > a::after {
+  content: " \002B";
+  font-size: 36px;
+  vertical-align: middle;
+}
+.first li span {
+  display: inline-block;
+  width: 150px;
+}
+
+.m-navi .m-bot {
+  padding: 40px 20px;
+}
+.m-bot .m-list em {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.m-list > li {
+  margin-bottom: 12px;
+}
+.m-bot .m-sub-list > li {
+  line-height: 1.3;
+}
+.m-bot .m-sub-list a {
+  font-size: 18px;
+  font-weight: 300;
+}
+@media (max-width: 512px) {
+  /*.m-sub-list > li {
+			position: relative;
+		}*/
+  .line-h .m-sub-list > li {
+    line-height: 1.6;
+  }
+  .m-sub-list > li::before {
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+  }
+  .line-h .m-sub-list > li::before {
+    top: -44px;
+  }
+  .first > li > a::after {
+    font-size: 32px;
+  }
+  .m-bot .m-list em {
+    font-size: 18px;
+  }
+  .m-bot .m-sub-list > li > a {
+    font-size: 14px;
+    margin-left: 12px;
+  }
+  .m-list .line-h .on {
+    display: block;
+  }
+}
+
+.m-sub-depth {
+  position: absolute;
+  right: -110%;
+  width: 100%;
+  top: 59px;
+  bottom: 0;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: #f5f4f1;
+  z-index: 10;
+  overflow-y: auto;
+  transition: 0.5s;
+}
+.m-sub-depth.on {
+  right: 0;
+}
+.m-sub-close {
+  float: left;
+  width: 30px;
+  background: url(../img/fresh/header/mdepClose.png) no-repeat 0 0 / 30px auto;
+  text-indent: -9999px;
+  cursor: pointer;
+  padding-bottom: 5px;
+  margin-right: 20px;
+}
+.m-sub-tit > strong {
+  float: left;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 500;
+}
+.m-sub-depth ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.m-sub-depth ul > li {
+  width: 48%;
+}
+.m-sub-depth ul > li img {
+  width: 100%;
+}
+.m-sub-depth p {
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 1;
+}
+@media (max-width: 512px) {
+  .m-sub-depth {
+    top: 53px;
+  }
+  .m-sub-close {
+    width: 20px;
+    background-size: 20px auto;
+  }
+  .m-sub-tit > strong {
+    font-size: 18px;
+  }
+  .m-sub-depth p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,180 @@
+header {
+    width: 100%;
+    position: relative;
+}
+header a {
+    display: inline-block;
+}
+.h-top {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4dddf;
+    padding: 26px 4.8%;
+}
+.h-top > h1 {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto; 
+    position: absolute;      
+    left: 50%;
+    transform: translateX(-50%);
+    top: 16px;
+}
+.h-top > h1 > a {
+    width: 100%;
+    height: 100%;
+    background: url(../img/logo/logo.png) no-repeat center / 80%;
+}
+
+.h-top button {
+    border: none;
+    background: url(../img/common/ico_zip.png) no-repeat 0 0 / 500px;
+}
+.h-top .btn-search {
+    width: 21px;
+    height: 21px;
+    background-position: -348px -275px;
+}
+.h-top .btn-menu {
+    width: 21px;
+    height: 17px;
+    background-position: -427px -278px;
+}
+.nav-wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    padding-top: 30px;
+    overflow-y: auto;
+    background-color: #f4dddf;
+    transform: translate(100%);
+    transition: 0.5s;
+    z-index: 99;
+}
+.nav-wrap.on {
+    transform: translateX(0);
+}
+.nav-in-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    overflow-y: auto;
+}
+.nav-wrap .nav-top {
+    padding: 20px 5.3%;
+    font-size: 15px;
+    border-bottom: 5px solid #f5f5f5;
+}
+.nav-top .login {
+    font-weight: 500;
+    border-bottom: 1px solid #312f2d;
+}
+.nav-top .join {
+    font-size: 12px;
+    margin-left: 10px;
+}
+.nav-top .join::after {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    margin-left: 5px;
+    transform: translateY(1px);
+    background: url(../img/common/ico_zip.png) no-repeat -413px -212px / 500px;
+}
+.gnb {
+    flex-direction: column;
+    width: 100%;
+    min-width: 100%;
+    background-color: #f4dddf;
+}
+.gnb > li {
+    padding: 0 3.5%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.gnb > li > a {
+    padding: 0.8em 0;
+    font-size: 16px;
+    color: #111;
+}
+.gnb > li > a::after {
+    display: none;
+}
+.gnb > li > a:hover::after {
+    width: 22px;
+    opacity: 1;
+}
+.nav-bot {
+    padding: 35px 25px;
+}
+.nav-bot a {
+    font-size: 30px;
+    font-weight: 700;
+}
+.nav-bot .hidden-area a {
+    font-size: 18px;
+    font-weight: 300;
+}
+.nav-bot > ul > li {
+    position: relative;
+    margin-bottom: 14px;
+}
+.nav-bot .tit::after {
+    content: "";
+    display: inline-block;
+    width: 19px ;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    /*transform: translateY(-10px);*/
+    background: url(../img/common/ico_zip.png) no-repeat -343px 0 / 500px;
+    transform: rotate(180deg);
+}
+.nav-bot .active .tit::after {
+    transform: rotate(0deg);
+}
+.nav-bot .hidden-area {
+    padding: 20px 5.3%;
+    display: none;
+}
+.nav-bot .active > .hidden-area {
+    display: block;
+}
+.nav-bot .hidden-area li {
+    line-height: 1.8;
+    padding-bottom: 5px;
+}
+.nav-bot .sub-depth {
+    display: none;
+}
+.gnb > .active .sub-depth {
+    display: block;
+}
+.nav-wrap a  {
+    color: #C45C67;
+}
+.nav-wrap .close {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url(../img/common/ico_zip.png) no-repeat -382px 0 / 500px;
+    top: 35px;
+    right: 20px;
+    border: none;
+}
+.h-bot ul {
+    display: flex;
+    justify-content: space-between;
+}
+.h-bot a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}

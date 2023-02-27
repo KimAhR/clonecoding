@@ -1,0 +1,131 @@
+header {
+    position: relative;
+    width: 100%;
+    z-index: 95;
+}
+header.active {
+    position: fixed;
+    min-width: 1200px;
+}
+/*@keyframes ani-drop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-72px); }
+}*/
+@keyframes ani-drop {
+    0% { transform: translateY(74px); }
+    100% { transform: translateY(0); }
+}
+.depth-top.active > .list-wrap {
+    height: 74px;
+}
+/*.depth-top.active > .list-wrap {
+    animation: ani-drop 0.3s ease-in-out forwards;
+}*/
+header, header a {
+    color: #151515;
+}
+.depth-top > h2 {
+    color: #151515;
+    font-size: 15px;
+}
+.sub-top {
+    font-size: 15px;
+    font-weight: bold;
+}
+.list-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+.list-wrap > li > a {
+    display: inline-block;
+}
+.list-wrap > li {
+    line-height: 1.5em;
+    margin: 0 40px;
+}
+.sub-list {
+    display: none;
+    position: absolute;
+    background-color: #f8f3f0;    
+    width: 50%;
+}
+.sub-list.bag {
+    display: none;
+    position: absolute;
+    right: 80px;
+    background-color: #f8f3f0;    
+    width: 50%;
+}
+.sub-list.acc {
+    display: none;
+    position: absolute;
+    right: 25px;
+    background-color: #f8f3f0;    
+    width: 50%;
+}
+.sub-list.about {
+    display: none;
+    position: absolute;
+    right: 5px;
+    background-color: #f8f3f0;    
+    width: 50%;
+}
+.sub-list.on {
+    display: flex;
+    justify-content: space-around;
+    animation: ani-drop 0.3s ease-in-out forwards;
+}
+.list-img {
+    width: 300px;
+    padding: 30px;
+}
+.sub-top {
+    font-size: 20px;
+    font-weight: 900;
+}
+.sub-depth {
+    padding: 30px;
+    /*padding-left: 100px;*/
+    line-height: 1.5em;
+}
+.sub-depth > .sub-bot span {
+    position: relative; 
+    color: #151515;
+    display: inline-block;
+}    
+.sub-depth > .sub-bot span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: #c45c67;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+.sub-depth > .sub-bot > li:hover span::after{
+    content: "";
+    transform: scaleX(1.0);
+}
+.navi .d-list .sub-right .sub-depth a {
+    width: auto;
+}
+.navi .d-list .sub-depth a:hover {
+    font-weight: 500;
+}
+.navi .d-list .sub-depth a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #003628;
+    transition: 0.3s;
+    transform: scale(0);
+}
+.navi .d-list .sub-depth a:hover::after {
+    transform: scale(1);
+}
