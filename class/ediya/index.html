@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EDIYA COFFEE</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="css/header.css">
+	<script src="../../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<div class="top">
+				<div class="left">
+					<ul>
+						<li class="color"><a href="#"><span>브랜드 사이트</span></a></li>
+						<li class="line"><a href="#"><span>기업 사이트</span></a></li>
+						<li class="line"><a href="#"><span>창업안내</span></a></li>
+						<li><a href="#"><span>채용안내</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mid">
+				<h1><a href="#"><img src="img/top_logo.gif" alt="ediya coffee"></a></h1>
+				<button class="m ham"><span><img src="img/m_nav_btn.gif" alt="menu"></span></button>
+			</div>
+			<div class="navi">
+				<nav>
+					<ul class="gnb">
+						<li>
+							<a href="#"><span>메뉴</span></a>
+							<button class="m a-btn"><span class="hidden">더보기</span></button>
+							<div class="depth">
+								<ul>
+									<li><a href="#"><span>음료</span></a></li>
+									<li><a href="#"><span>베이커리</span></a></li>
+									<li><a href="#"><span>원두</span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span>유통제품</span></a>
+							<button class="m a-btn"><span class="hidden">더보기</span></button>
+							<div class="depth">
+								<ul>
+									<li><a href="#"><span>스틱커피(비니스트)</span></a></li>
+									<li><a href="#"><span>커피믹스</span></a></li>
+									<li><a href="#"><span>캡슐커피</span></a></li>
+									<li><a href="#"><span>컵커피</span></a></li>
+								</ul>	
+							</div>
+						</li>
+						<li>
+							<a href="#"><span>이디야멤버스</span></a>
+							<button class="m a-btn"><span class="hidden">더보기</span></button>
+							<div class="depth">
+								<ul>
+									<li><a href="#"><span>멤버스 소개</span></a></li>
+									<li><a href="#"><span>이디야카드</span></a></li>
+									<li><a href="#"><span>선물하기</span></a></li>
+									<li><a href="#"><span>이디야오더</span></a></li>
+									<li><a href="#"><span>FAQ</span></a></li>
+								</ul>	
+							</div>
+						</li>
+						<li>
+							<a href="#"><span>기프트카드</span></a>
+							<button class="m a-btn"><span class="hidden">더보기</span></button>
+							<div class="depth">
+								<ul>
+									<li><a href="#"><span>기프트카드 소개</span></a></li>
+									<li><a href="#"><span>잔액 조회</span></a></li>
+									<li><a href="#"><span>분실신고/환불신청</span></a></li>
+									<li><a href="#"><span>자주하는 질문</span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span>사회공헌</span></a>
+							<button class="m a-btn"><span class="hidden">더보기</span></button>
+							<div class="depth">
+								<ul>
+									<li><a href="#"><span>메이트 희망기금</span></a></li>
+									<li><a href="#"><span>캠퍼스 희망기금</span></a></li>
+									<li><a href="#"><span>식수위생 캠페인</span></a></li>
+									<li><a href="#"><span>이디야의 동행</span></a></li>
+									<li><a href="#"><span>기타활동</span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span>공지사항</span></a>
+							<button class="m a-btn"><span class="hidden">더보기</span></button>
+							<div class="depth">
+								<ul>
+									<li><a href="#"><span>이디야 소식</span></a></li>
+									<li><a href="#"><span>이벤트</span></a></li>
+									<li><a href="#"><span>홈카페 레시피</span></a></li>
+									<li><a href="#"><span>대량쿠폰구매</span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="m">
+							<a href="#"><span>매장찾기</span></a>
+						</li>
+						<li class="right m">
+							<div class="search">
+								<div class="sh-box">
+									<input type="text">
+									<button><span class="hidden">찾기</span></button>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="right">
+						<div class="t-menu">
+							<a href="#"><span>로그인</span></a>
+							<a href="#" class="pc"><span>매장찾기</span></a>
+							<a href="#"><span>고객의 소리</span></a>
+							<a href="#"><span>이디야 공식몰</span></a>
+						</div>
+						<div class="sns">
+							<a href="#" class="bl"><span class="hidden">blog</span></a>
+							<a href="#" class="in"><span class="hidden">instagram</span></a>
+							<a href="#" class="fb"><span class="hidden">facebook</span></a>
+							<a href="#" class="yt"><span class="hidden">youtube</span></a>
+						</div>
+						<div class="search pc">
+							<div class="sh-box">
+								<input type="text">
+								<button><span class="hidden">찾기</span></button>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<button class="m close"><span><img src="img/m_nav_close.png" alt="닫기"></span></button>
+			</div>
+		</header>
+		<script>
+			const bw = $(window).width();
+
+			if(bw > 1179) {
+				// $('.gnb').on('mouseenter focus', function() {
+				// 	$('.gnb').addClass('on');
+				// 	$('header').addClass('on');
+				// 	$('.depth').on('mouseenter focus', function() {
+				// 		$('.gnb > li > a').removeClass('on');
+				// 		$(this).siblings('a').addClass('on');
+				// 	})
+				// });
+				$('.gnb').on('mouseleave blur', function() {
+					$('.gnb').removeClass('on');
+					$('header').removeClass('on');
+					$('.gnb > li > a').removeClass('on');
+				});
+			}
+
+			$('button.ham').on('click focus', function() {
+				$('.navi').show();
+				$('.right').addClass('on');
+			})
+			$('button.close').on('click focus', function() {
+				$('.navi').hide();
+				$('.right').removeClass('on');
+			})
+
+			$('.gnb .a-btn').click(function() {
+				$(this).parent().toggleClass('on');
+			})
+
+			// $(window).resize(function() {
+			// 	const bw = $(window).width();
+
+			// 	if(bw > 1179) {
+			// 		$('.navi').removeAttr('style');
+			// 		$('.gnb').on('mouseenter focus', function() {
+			// 			$('.gnb').addClass('on');
+			// 			$('header').addClass('on');
+			// 			$('.depth').on('mouseenter focus', function() {
+			// 				$('.gnb > li > a').removeClass('on');
+			// 				$(this).siblings('a').addClass('on');
+			// 			})
+			// 		});
+			// 		$('.gnb').on('mouseleave blur', function() {
+			// 			$('.gnb').removeClass('on');
+			// 			$('header').removeClass('on');
+			// 			$('.gnb > li > a').removeClass('on');
+			// 		});
+			// 	} else {
+			// 		$('.right').removeClass('on');
+			// 		$('.gnb').off('mouseenter').off('mouseleave');
+			// 		$('.gnb > li').removeClass('on');
+			// 	}
+			// })
+		</script>
+		<div id="container"></div>
+	</div>
+</body>
+</html>

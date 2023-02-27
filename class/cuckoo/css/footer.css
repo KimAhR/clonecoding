@@ -1,0 +1,202 @@
+footer {
+    width: 100%;
+    background-color: #312f2d;
+    font-size:  15px;
+}
+.foot-in {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 80px 0;
+    color: #888887;
+    position: relative;
+}
+.foot-in .top-left span, .fm-site > a {
+    color: #888887;
+}
+.foot-in strong, .foot-in .mid-left li {
+    color: #fff;
+}
+.foot-in .mid-top strong, .strong {
+    font-weight: 500;
+}
+.foot-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f-line {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #3e3d3b;
+}
+.foot-top > .top-left > li {
+    display: inline-block;
+}
+.foot-top > .top-left a::after {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: #8a8b87;
+    vertical-align: middle;
+    margin: -3px 9px 0 9px;
+}
+.foot-top > .top-left > li:last-child > a::after {
+    display: none;
+}
+.foot-top .fm-site {
+    position: relative;
+    width: 180px;
+
+}
+.foot-top .fm-site > a {
+    border-bottom: 3px solid #585856;
+    font-weight: 500;
+    padding:  15px 0;
+}
+.foot-top .fm-site > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background: url(../c-img/images/common/ico_zip.png) no-repeat -227px -287px;
+    right: 0;
+    top: 20px;
+}
+.foot-top .fm-depth {
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transition: transform 0.5s;
+    border-radius: 1pxs solid #585856;
+    box-sizing: border-box;
+    background-color: #312f2d;
+    position: absolute;
+    width: 100%;
+    padding: 12px 0;
+    transform-origin: top;
+}
+.foot-top .fm-depth a {
+    padding: 12px 20px;
+    height: 20px;
+    color: #8a8b87;
+}
+.foot-top > .fm-site.on .fm-depth {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.foot-top > .fm-site:hover .fm-depth {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.mid-top {
+    padding-top: 50px;
+}
+.mid-top ul {
+    margin: 15px 0 ;
+}
+.mid-top li {
+    display: inline-block;
+    border-right: 1px solid #494846;
+    padding-right: 6px;
+    padding-left: 4px;
+}
+.mid-top li:first-child {
+    padding-left: 0;
+}
+.mid-top li:last-child {
+    border: none;
+}
+.mid-top strong, .strong {
+    font-size: 17px;
+}
+.mid-top .mid-right a, .bot-top a{
+    color: #8a8b87 ;
+}
+.mid-left, .mid-right {
+    float: left;
+}
+.mid-left {
+    margin-right: 45px;
+}
+.bot-top {
+    padding-top:  50px;
+}
+.bot-top > div {
+    margin-bottom: 50px;
+}
+.bot-top em {
+    display: block;
+    width: 256px;
+    height: 33px;
+    text-indent: -9999px;
+    background: url('../c-img/images/common/txt_zip.png') no-repeat 0 -125px;
+    margin-bottom: 50px;
+}
+.bot-top > .bot-list02 > em {
+    background-position: 0 -187px;
+}
+.bot-top > .bot-list02 > em {
+    background-position: 0 -244px;
+}
+.bot-top address > span {
+    line-height: 1.6;
+}
+.bot-top address + p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+.bot-top a {
+    display: inline-block;
+}
+.foot .web-ico {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin: 0 10px 0 8px;
+    background: url(../c-img/images/common/ico_zip.png) no-repeat -106px -317px;
+    text-indent: -9999px;
+}
+.foot-in .sns {
+    position: absolute;
+    right: 0;
+    top: 220px;
+}
+.foot-in .sns > li {
+    display: inline-block;
+    margin-left: 8px;
+}
+.foot-in .sns a {
+    width: 27px;
+    height: 24px;
+    background: url('../c-img/images/common/img_ico_zip.png') no-repeat -246px -806px;
+}
+.foot-in .sns > li:first-child > a:hover {
+    background-position: -246px -871px;
+}
+.foot-in .sns > li:nth-child(2) > a {
+    background-position: 0 -805px;
+}
+.foot-in .sns > li:nth-child(2) > a:hover {
+    background-position: -0px -869px;
+}
+.foot-in .sns > li:nth-child(3) > a {
+    background-position: -53px -806px;
+}
+.foot-in .sns > li:nth-child(3) > a:hover {
+    background-position: -53px -870px;
+}
+.foot-in .sns > li:nth-child(4) > a {
+    background-position: -119px -805px;
+}
+.foot-in .sns > li:nth-child(4) > a:hover {
+    background-position: -119px -869px;
+}
+.foot-in .sns > li:last-child > a {
+    background-position: -182px -805px;
+}
+.foot-in .sns > li:last-child > a:hover {
+    background-position: -182px -873px;
+}

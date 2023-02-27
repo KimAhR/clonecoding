@@ -1,0 +1,124 @@
+footer {
+	width: 100%;
+	color: #8a8b87;
+	font-size: 12px;
+}
+footer a, footer select {
+	color: #8a8b87;
+}
+.f-top, .f-bot {
+	padding: 4.8%;
+}
+.f-top {
+	background-color: #312f2d;
+}
+.f-top > strong {
+	font-size: 15px;
+	color: #eaeae9;
+	font-weight: bold;
+}
+.f-top > p {
+	margin: 1em 0;
+	line-height: 1.8em;
+}
+.f-top > .tel-box {
+	display: flex;
+	justify-content: space-between;
+}
+.f-top > .tel-box > li {
+	border: 1px solid #585856;
+	text-align: center;
+	width: 32%;
+	flex: 0 1 auto;
+}
+.f-top > .tel-box a {
+	height: 63px;
+	color: #eaeae9;
+	font-weight: 500;
+	line-height: 1.8;
+	display: flex;
+	flex-direction: column;
+	/*flex-wrap: wrap;*/
+	justify-content: center;
+	align-items: center;
+}
+.f-top > .tel-box strong {
+	/*display: block; */ /*100*/
+}
+.f-top > .desc {
+	margin-top: 2em;
+}
+.f-top > .desc > a {
+	margin-right: 4px;
+}
+.f-top .bold {
+	color: #c7c8c4;
+	font-weight: bold;
+}
+.f-top > .se-fmsite {
+	border-bottom: 2px solid #585856;
+	position: relative;
+}
+.se-fmsite::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 1.4em;
+	right: 0;
+	width: 14px;
+	height: 8px;
+	background: url(../c-img/mo/common/ico_zip.png) no-repeat -265px 0 / 500px;
+}
+.f-top #f-fmsite {
+	width: 100%;
+	font-size: 12px;
+	border: none;
+	background-color: transparent;
+	padding: 1.2em 0 0.8em
+}
+.f-bot {
+	background-color: #2a2827;
+}
+.f-bot > .f-acodian > a > span::after {
+	content: "";
+	display: inline-block;
+	width: 9px;
+	height: 4px;
+	margin: -2px 0 0 10px;
+	background: url(../c-img/mo/common/ico_zip.png) no-repeat -224px 0 / 500px;
+	vertical-align: middle;
+}
+.f-bot > .f-acodian.on span::after {
+	transform: rotate(180deg);
+}
+.f-bot .hidden-area {
+	display: none;
+}
+.f-bot > .f-acodian.on > .hidden-area {
+	display: block;
+}
+.f-bot .address-wrap > strong {
+	display: block;
+	width: 180px;
+	height: 21px;
+	text-indent: -9999px;
+	background: url(../c-img/mo/common/txt_zip.png) no-repeat 0 0 / 250px;
+	margin: 20px 0 10px;
+}
+.f-bot .address-wrap > .ele {
+	background-position: 0 -46px;
+}
+.f-bot .address-wrap > .home {
+	background-position: 0 -89px;
+}
+.f-bot .txt {
+	line-height: 1.8em;
+}
+.f-bot .copy {
+	margin-top: 0.4em;
+	line-height: 1.6em;
+}
+.f-bot >.f-acodian > p {
+	margin-top: 2em;
+	line-height: 1.6em;
+}

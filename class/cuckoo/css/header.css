@@ -1,0 +1,323 @@
+header {
+    position: relative;
+    width: 100%;
+    z-index: 95;
+    height: auto;
+}
+header.active {
+    position: fixed;
+    min-width: 1200px;
+    height: 74px;
+}
+/*header.active > .h-top {
+    display: none;
+}*/
+@keyframes ani-drop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-72px); }
+}
+header > .h-bot {
+    /*transform: translateY(0);
+    transition: 0.3s;*/
+    height: 74px;
+}
+header.active > .h-bot {
+    /*transform: translateY(-72px);*/
+    animation: ani-drop 0.3s ease-in-out forwards;
+}
+header, header a {
+    color: #fff;
+}
+.depth {
+    color: #272524;
+}
+.h-top {
+    background-color: #312f2d;
+}
+.h-bot {
+    background-color: #7a101b;
+}
+.h-in {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.h-top > .h-in {
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h-list {
+    width: 250px;
+}
+.h-in > h1 {
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+}
+.h-in > h1 > a {
+    display: block;
+    width: 161px;
+    height: 24px;
+    background: url(../c-img/images/common/cuckoo_logo.png) no-repeat;
+}
+.h-in .h-right li {
+    display: inline-block;
+}
+.h-top .h-right li {
+    font-size: 13px;
+    margin-left: 15px;
+}
+.h-bot .h-menu {
+    border-left: 1px solid #852933;
+    border-right: 1px solid #852933;
+    width: 215px;
+    padding: 0 20px;
+    float: left;
+    box-sizing: border-box;
+}
+.h-bot .h-menu > button {
+    width: 100%;
+    text-align: left;
+    padding: 24px 0;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+   /* background-color: darkcyan;*/
+    line-height: 1.5em;
+}
+.h-bot .h-menu > button > span {
+    position: relative;
+    display: block;
+}
+.h-bot .h-menu > button > span::after {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    background: url(../c-img/images/common/header_menu_cate.png) no-repeat;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+.h-menu .depth, .h-menu .sub-list {
+    display: none;
+}
+.h-menu .depth.on {
+    display: block;
+    position: fixed;
+    z-index: 90;
+    background-color: #fff;
+    width: 540px;
+    margin-left: -20[x];
+    box-shadow: -1px 0 19px -1px rgba(0, 0, 0, 0.3);
+}
+.h-menu .depth-in {
+    padding: 30px 20px;
+}
+.h-menu .depth-bot {
+    margin-top: 40px;
+}
+.h-menu h2 {
+    font-size: 22px;
+    color: #272524;
+    font-weight: 400;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d6d5d5;
+}
+.h-menu a {
+    color: #111;
+    font-size: 17px;
+}
+.h-menu .sub-list a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+.h-menu .sub-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    background: #939ba1 url(../c-img/images/common/ico01.png)no-repeat 120% 105%;
+    /*bg 각각 넣기 */
+}
+.depth-top li:nth-child(2) .sub-list {
+    background-image: url(../c-img/images/common/ico02.png);
+}
+.depth-top li:nth-child(3) .sub-list {
+    background-image: url(../c-img/images/common/ico03.png);
+}
+.depth-top li:nth-child(4) .sub-list {
+    background-image: url(../c-img/images/common/ico04.png);
+}
+.depth-top li:nth-child(5) .sub-list {
+    background-image: url(../c-img/images/common/ico05.png);
+}
+.depth-top li:nth-child(6) .sub-list {
+    background-image: url(../c-img/images/common/ico06.png);
+}
+.depth-top li:last-child .sub-list {
+    background-image: url(../c-img/images/common/ico06_2.png);
+}
+.depth-bot li:first-child .sub-list {
+    background-image: url(../c-img/images/common/ico07.png);
+}
+.depth-bot li:nth-child(2) .sub-list {
+    background-image: url(../c-img/images/common/ico08.png);
+}
+.depth-bot li:nth-child(3) .sub-list {
+    background-image: url(../c-img/images/common/ico09.png);
+}
+.depth-bot li:nth-child(4) .sub-list {
+    background-image: url(../c-img/images/common/ico10.png);
+}
+.depth-bot li:last-child .sub-list {
+    background-image: url(../c-img/images/common/ico11.png);
+}
+/*.h-menu .depth h2 + ul > li > a:hover + .sub-list {
+    display: block;
+}*/
+.h-menu .sub-list.on {
+    display: block;
+}
+.h-menu h2 + ul > li {
+    display: flex;
+    align-items: center;
+}
+.h-menu h2 + ul > li::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    background: url(../c-img/images/common/menu_ico.png) no-repeat -9px -6px;
+    /*vertical-align: middle;*/
+}
+/*.h-menu h2 + ul > li > a {
+    display: inline-block;
+}*/
+.h-menu h2 + ul > li:nth-child(2)::before {
+    background-position: -9px -52px;
+}
+.h-menu h2 + ul > li:nth-child(3)::before {
+    background-position: -9px -95px;
+}
+.h-menu h2 + ul > li:nth-child(4)::before {
+    background-position: -12px -143px;
+}
+.h-menu h2 + ul > li:nth-child(5)::before {
+    background-position: -9px -185px;
+}
+.h-menu h2 + ul > li:nth-child(6)::before {
+    background-position: -9px -229px;
+}
+.h-menu h2 + ul > li:last-child::before {
+    background-position: -9px -276px;
+}
+.h-menu .depth-bot h2 + ul > li:first-child::before {
+   background-position: -62px -6px; 
+}
+.h-menu .depth-bot h2 + ul > li:nth-child(2)::before {
+   background-position: -62px -52px; 
+}
+.h-menu .depth-bot h2 + ul > li:nth-child(3)::before {
+   background-position: -62px -95px; 
+}
+.h-menu .depth-bot h2 + ul > li:nth-child(4)::before {
+   background-position: -62px -143px; 
+}
+.h-menu .depth-bot h2 + ul > li:nth-child(5)::before {
+   background-position: -62px -185px; 
+}
+.h-menu .depth-bot h2 + ul > li:last-child::before {
+   background-position: -62px -229px; 
+}
+.h-menu li { 
+    line-height: 2.2em; 
+}
+.h-menu .sub-list li::before {
+    content: "\002d";
+    color: #fff;
+    vertical-align: middle;
+}
+.h-menu .sub-list a {
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+nav {
+    float: left;
+    width: calc(100% - 430px);
+    height: 74px;
+    text-align: center ;
+    /*background-color: darkgreen;*/  
+}
+
+nav li { 
+    display: inline-block;
+    margin: 0 30px;
+}
+nav li > a {
+    padding: 28px 0;
+    position: relative; 
+}
+nav li > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    /*width: 0;*/
+    height: 2px;
+    /*left: 50%;*/
+    bottom: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: 0.3s;
+    /*transform: translateX(-50%);*/
+   
+}
+nav li:hover > a::after{
+    content: "";
+    /*width: 100%;*/
+    transform: scaleX(1.0);
+    }
+
+/*nav li:hover > a::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: #fff;
+}*/
+.h-bot .h-right{   
+    float: right;
+    width: 215px;
+    margin-top: 23px;
+    text-align: right;
+    /*background-color: darkblue;*/
+}
+.h-bot .h-right li {
+    margin-left: 40px;
+}
+.h-bot .h-right li > button {
+    width: 24px;
+    height: 25px;
+    border: none;
+    background: url(../c-img/images/layout/mycuckoo_icon.png) no-repeat;
+}
+.h-bot .h-right li.cart > button {
+    width: 30px;
+    background-image: url(../c-img/images/layout/ico_cart_pc.png);
+}
+.h-bot .h-right li.search > button {
+    background-image: url(../c-img/images/layout/search_icon.png);
